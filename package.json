@@ -1,0 +1,22 @@
+{
+  "name": "incoin.io",
+  "version": "1.0.0",
+  "description": "The incoin.io Homepage.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:codelittinc/incoin.io.git"
+  },
+  "keywords": [
+    "incoin",
+    "bitcoin",
+    "payroll"
+  ],
+  "author": "Carlos Feliciano-Barba",
+  "license": "MIT",
+  "homepage": "https://incoin.io",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-compass": "*",
+    "gulp-coffee": "*"
+  }
+}
