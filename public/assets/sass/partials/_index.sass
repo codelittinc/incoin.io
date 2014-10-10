@@ -1,2 +1,71 @@
-body
-  background: #fff
+html, body
+  height: 100%
+
+#main
+  background: #234cdd
+  color: #fff
+  height: 100%
+  background-image: image-url('/assets/images/PNG/Homepage-background.png')
+  background-image: image-url('/assets/images/SVG/Homepage-background.svg')
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  height: 100%
+  width: 100%
+  .gem
+    background-image: image-url('/assets/images/PNG/Homepage-gem.png')
+    background-image: image-url('/assets/images/SVG/Homepage-gem.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    height: 80%
+    width: 100%
+    position: absolute
+    top: 4em
+    .title
+      position: relative
+      top: 40%
+
+    .header,.subheader
+      position: relative
+      text-align: center
+    .header
+      font-size: 6vw
+    .subheader
+      font-size: 2vw
+      p,a
+        display: inline-block
+
+#simplicity-and-cost
+  .header
+    h3
+      width: 100%
+      text-align: center
+  .container
+    .col-sm-4
+      p
+        text-align: center
+        &:before
+          content: ""
+          display: block
+          width: 150px
+          height: 150px
+          margin: 0 auto
+        &.employees-and-contractors:before
+          background-image: image-url('/assets/images/PNG/Homepage-Graphic-1.png')
+          background-image: image-url('/assets/images/SVG/Homepage-Graphic-1.svg')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+        &.automatically-distribute:before
+          background-image: image-url('/assets/images/PNG/Homepage-Graphic-2.png')
+          background-image: image-url('/assets/images/SVG/Homepage-Graphic-2.svg')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
+        &.choice-of-currency:before
+          background-image: image-url('/assets/images/PNG/Homepage-Graphic-3.png')
+          background-image: image-url('/assets/images/SVG/Homepage-Graphic-3.svg')
+          background-repeat: no-repeat
+          background-size: contain
+          background-position: center
