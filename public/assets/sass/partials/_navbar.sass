@@ -35,9 +35,18 @@
       position: relative
       top: -3em
       font-weight: lighter
+      a
+        color: #8bc0fb
+        +single-transition(all, 0.25s)
+        &.selected, &:hover
+          color: #fff
+          text-decoration: none
+          padding-bottom: 5px
+          border-bottom: 2px solid #fff
     &.left
       float: left
     &.right
       float: right
       li
+        font-weight: bold
         top: 2.5em
