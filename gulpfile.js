@@ -23,7 +23,6 @@ function compileCSS() {
     css: 'public/assets/css',
     sass: 'public/assets/sass',
   }))
-  .on('error', console.log)
   .pipe(gulp.dest('public/assets/css'));
   return stream;
 }
