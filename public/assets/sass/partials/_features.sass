@@ -1,0 +1,194 @@
+#freedom-for
+  background: #0090e7
+  color: #fff
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+
+  h1
+    margin: 0
+    text-align: center
+    color: #fff
+    padding: 3em 0 1em
+    font-weight: lighter
+    font-size: 50px
+
+  .text-arrow
+    padding-bottom: 4em
+    a
+      text-align: center
+      display: block
+      color: #8bc0fb
+
+#all-of-the
+  .header
+    font-weight: lighter
+    text-align: center
+    margin: 2em 0
+  .tab-title
+    text-align: center
+    li
+      display: inline-block
+      list-style: none
+      padding: 0 3em
+      cursor: pointer
+
+    .image
+      height: 100px
+      width: 100px
+      display: block
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      margin: 0 auto
+
+    .title
+      text-align: center
+      display: block
+      font-size: 25px
+      margin: 0.3em 0
+      color: #dde6e8
+
+      &:after
+        content: ""
+        display: block
+        width: 0
+        border-left: 30px solid transparent
+        border-right: 30px solid transparent
+        border-bottom: 30px solid #ff9a67
+        margin: 0 auto -25px
+        visibility: hidden
+
+    .employer .image
+      background-image: image-url('/assets/images/PNG/Homepage-employers-inactive.png')
+      background-image: image-url('/assets/images/SVG/Homepage-employers-inactive.svg')
+
+    .employer.active
+
+      .image
+        background-image: image-url('/assets/images/PNG/Homepage-employers-active.png')
+        background-image: image-url('/assets/images/SVG/Homepage-employers-active.svg')
+      .title
+        color: #ff9a67
+        font-weight: bold
+        &:after
+          border-bottom-color: #ff9a67
+          visibility: visible
+
+    .employee .image
+      background-image: image-url('/assets/images/PNG/Homepage-employees-inactive.png')
+      background-image: image-url('/assets/images/SVG/Homepage-employees-inactive.svg')
+
+    .employee.active 
+      .image
+        background-image: image-url('/assets/images/PNG/Homepage-employees-active.png')
+        background-image: image-url('/assets/images/SVG/Homepage-employees-active.svg')
+      .title
+        color: #66e9a0
+        font-weight: bold
+        &:after
+          border-bottom-color: #66e9a0
+          visibility: visible
+
+  .container-fluid
+    padding: 5em 0
+    display: none
+    > .row
+      margin: 0 auto
+      width: 80%
+    .title
+      h2
+        color: #fff
+        font-size: 45px
+        width: 430px
+        margin-bottom: 1em
+
+      .subheader
+        color: #fff
+        font-size: 1.5vw
+        p,a
+          display: inline-block
+        .try-it-button
+          background: #fff
+
+    .description
+      .row
+        padding: 1em 0
+        text-align: center
+      p
+        font-size: 20px
+        font-weight: lighter
+        width: 240px
+        display: inline-block
+        position: relative
+        top: -1.5em
+        margin-left: 2em
+        text-align: left
+
+      .image
+        content: ""
+        display: inline-block
+        height: 150px
+        width: 150px
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        margin: 0 auto
+
+  .container-fluid.active
+    display: block
+    .title:after
+      visibility: visible
+
+  .employers-description
+    background: #ff9a67
+
+    .subheader
+      .try-it-button
+        color: #ff9a67
+
+    .row-1 .image
+      background-image: image-url('/assets/images/PNG/Homepage-employers-graph1.png')
+      background-image: image-url('/assets/images/SVG/Homepage-employers-graph1.svg')
+    .row-2
+      p
+        margin-left: 0.8em
+      .image
+        width: 205px
+        margin-left: -30px
+        background-image: image-url('/assets/images/PNG/Homepage-employers-graph2.png')
+        background-image: image-url('/assets/images/SVG/Homepage-employers-graph2.svg')
+    .row-3 .image
+      background-image: image-url('/assets/images/PNG/Homepage-employers-graph3.png')
+      background-image: image-url('/assets/images/SVG/Homepage-employers-graph3.svg')
+
+  .employee-description
+    background: #66e9a0
+
+    .subheader
+      .try-it-button
+        color: #66e9a0
+
+    .description
+      p
+        width: 225px
+
+      .row-1 
+        p
+          margin-left: 0.8em
+        .image
+          width: 175px
+          margin-left: 1px
+          background-image: image-url('/assets/images/PNG/Homepage-employees-graph1.png')
+          background-image: image-url('/assets/images/SVG/Homepage-employees-graph1.svg')
+      .row-2
+        p
+          margin-left: 0.8em
+        .image
+          width: 195px
+          margin-left: -18px
+          background-image: image-url('/assets/images/PNG/Homepage-employees-graph2.png')
+          background-image: image-url('/assets/images/SVG/Homepage-employees-graph2.svg')
+      .row-3 .image
+        background-image: image-url('/assets/images/PNG/Homepage-employees-graph3.png')
+        background-image: image-url('/assets/images/SVG/Homepage-employees-graph3.svg')
