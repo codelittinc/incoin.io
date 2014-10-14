@@ -58,6 +58,22 @@ $(document).ready ->
       </div>
     """)
 
+  # Waypoints for the navbar=
+  $('#all-of-the').waypoint
+    handler: ->
+      $('.navbar').toggleClass('scrolled')
+    offset: '25%'
+
+  $('#slider-section').waypoint
+    handler: ->
+      $('.navbar').toggleClass('scrolled')
+    offset: '25%'
+
+  $('#simplicity-and-cost').waypoint
+    handler: ->
+      $('.navbar').toggleClass('scrolled')
+    offset: '25%'
+
 # Since borders don't allow width in percentage we have to calculate it
 resizeBorder = ->
   $('.angled-border.bottom').css('border-left-width', "#{$(window).width()}px")
