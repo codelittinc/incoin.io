@@ -28,6 +28,9 @@ $(document).ready ->
     total = 25 + (employees * 4)
     $('.slider-container .employees').text(employees)
     $('.slider-container .total').text(total)
+    if value == 1
+      return $('.pluralize').text('employee')
+    $('.pluralize').text('employees')
 
   $('#slider').slider
     range: "min"
@@ -42,12 +45,15 @@ $(document).ready ->
     stop: (e, o) ->
       updateSlider(o.value)
 
+
+# If 1 show employee instead of employees
+
   # Append div to the slider handle
   $('.ui-slider-handle').append(
     """
       <div class="price-calc">
         <p class="base">base price</p>
-        <p>+ <span class="employees">3</span> employees</p>
+        <p>+ <span class="employees">3</span> <span class="pluralize">employees</span></p>
         <p><span class="dollar">$</span> <span class="total">37</span></p>
       </div>
     """)
