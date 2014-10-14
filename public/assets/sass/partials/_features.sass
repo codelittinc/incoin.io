@@ -206,22 +206,71 @@
         background-image: image-url('/assets/images/SVG/Homepage-employees-graph3.svg')
 
 #general-simplified
+  padding-bottom: 4em
   h2
     font-weight: lighter
     text-align: center
     margin: 2em 0
 
-  .wide-image
-    content: ""
-    height: 150px
-    width: 80%
-    background-repeat: no-repeat
-    background-size: contain
-    background-position: center
-    margin: 0 auto
+  .flow-text
+    text-align: center
+    color: #7f8a8f
+    font-weight: lighter
+    width: 135px
     display: block
-    background-image: image-url('/assets/images/PNG/Homepage-Payment-flow.png')
-    background-image: image-url('/assets/images/SVG/Homepage-Payment-flow.svg')
+    margin: 0 auto
+
+    &:before
+      content: ""
+      height: 100px
+      width: 100px
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+      margin: 0 auto
+      display: block
+      margin-bottom: 1em
+
+    &:after
+      content: ""
+      background: #f3ede0
+      height: 2px
+      display: inline-block
+      width: 50%
+      position: absolute
+      top: 4em
+      right: -25%
+      z-index: -10
+
+    &.no-line:after
+      display: none
+
+    &.quick:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-01.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-01.svg')
+    &.security:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-02.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-02.svg')
+    &.enter-details:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-03.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-03.svg')
+    &.set-period:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-04.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-04.svg')
+    &.payroll-runs:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-05.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-05.svg')
+    &.employees-paid:before
+      background-image: image-url('/assets/images/PNG/Payment-flow-Graphic-06.png')
+      background-image: image-url('/assets/images/SVG/Payment-flow-Graphic-06.svg')
+
+
+
+  .flow-line
+    background: #f3ede0
+    height: 2px
+    display: block
+    margin: 4em 0 -4em
 
 #good-hands
   background: #f7f5ef
