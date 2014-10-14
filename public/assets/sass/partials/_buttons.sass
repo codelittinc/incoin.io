@@ -29,17 +29,26 @@
   width: 100%
   a
     text-transform: uppercase
+    text-decoration: none
     color: #666
     margin: 1em 0
     display: inline-block
-    &:after
-      content: ""
-      display: inline-block
-      width: 20px
-      height: 20px
-      margin: 4px 0 -4px 5px
-      background-repeat: no-repeat
-      background-size: contain
-      background-position: center
-      background-image: image-url('/assets/images/PNG/Homepage-arrow.png')
-      background-image: image-url('/assets/images/SVG/Homepage-arrow.svg')
+  svg
+    display: inline-block
+    margin: 0 auto
+    height: 15px
+    text-align: center
+    margin: 5px 0 -3px
+    .arrow
+      fill: #666
+
+  &:hover
+    a
+      color: #234cdd
+    .arrow
+      fill: #234cdd
+  &.white:hover
+    a
+      color: #fff !important
+    .arrow
+      fill: #fff !important
