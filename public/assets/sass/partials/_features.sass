@@ -53,6 +53,7 @@
       background-size: contain
       background-position: center
       margin: 0 auto
+      +single-transition(all, 0.5s)
 
     .title
       text-align: center
@@ -60,6 +61,8 @@
       font-size: 25px
       margin: 0.3em 0
       color: #dde6e8
+      width: 124px
+      +single-transition(all, 0.5s)
 
       &:after
         content: ""
@@ -73,32 +76,34 @@
 
     .employer .image
       background-image: image-url('/assets/images/PNG/Homepage-employers-inactive.png')
-      background-image: image-url('/assets/images/SVG/Homepage-employers-inactive.svg')
+      // background-image: image-url('/assets/images/SVG/Homepage-employers-inactive.svg')
 
-    .employer.active
+    .employer
+      &:hover, &.active
 
-      .image
-        background-image: image-url('/assets/images/PNG/Homepage-employers-active.png')
-        background-image: image-url('/assets/images/SVG/Homepage-employers-active.svg')
-      .title
-        color: #ff9a67
-        font-weight: bold
-        &:after
+        .image
+          background-image: image-url('/assets/images/PNG/Homepage-employers-active.png')
+          // background-image: image-url('/assets/images/SVG/Homepage-employers-active.svg')
+        .title
+          color: #ff9a67
+      &.active
+        .title:after
           border-bottom-color: #ff9a67
           visibility: visible
 
     .employee .image
       background-image: image-url('/assets/images/PNG/Homepage-employees-inactive.png')
-      background-image: image-url('/assets/images/SVG/Homepage-employees-inactive.svg')
+      // background-image: image-url('/assets/images/SVG/Homepage-employees-inactive.svg')
 
-    .employee.active
-      .image
-        background-image: image-url('/assets/images/PNG/Homepage-employees-active.png')
-        background-image: image-url('/assets/images/SVG/Homepage-employees-active.svg')
-      .title
-        color: #66e9a0
-        font-weight: bold
-        &:after
+    .employee
+      &:hover, &.active
+        .image
+          background-image: image-url('/assets/images/PNG/Homepage-employees-active.png')
+          // background-image: image-url('/assets/images/SVG/Homepage-employees-active.svg')
+        .title
+          color: #66e9a0
+      &.active
+        .title:after
           border-bottom-color: #66e9a0
           visibility: visible
 
@@ -356,3 +361,6 @@
       padding: 5px 25px
       position: relative
       top: -4px
+      &:hover
+        color: #fff
+        background: #3f47e1
