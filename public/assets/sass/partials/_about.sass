@@ -41,10 +41,9 @@ h1,h2,h3,h4,p,li,a
       position: relative
       top: -4px
 
-#small-team
-  background: #FB6653
+#top-banner
   padding: 15em
-  padding-bottom: 10em
+  padding-bottom: 7em
   text-align: center
   .header, .subheader
     font-size: 35px
@@ -52,6 +51,8 @@ h1,h2,h3,h4,p,li,a
   .subheader
     font-style: italic
     font-weight: 100
+  &.about
+    background: #FB6653
 
 #description
   .description
@@ -68,9 +69,11 @@ h1,h2,h3,h4,p,li,a
     color: #FB6653
   #pictures
     margin-top: 25px
+    position: relative
     .picture
       width: 25%
       float: left
+      overflow: hidden
       img
         width: 100%
         height: 100%
@@ -78,10 +81,10 @@ h1,h2,h3,h4,p,li,a
         padding: 0
         float: left
       .hover-over
+        overflow: hidden
         display: none
         width: 100%
         height: 95px
-        margin-top: -95px
         left: 0px
         background: rgba(0,0,255,0.5)
         color: white
@@ -92,6 +95,19 @@ h1,h2,h3,h4,p,li,a
           font-weight: bold
       &:hover
         .hover-over
+          animation-name: bounce
+          animation-timing-function: ease-in
+          animation-iteration-count: 1
+          animation-duration: .4s
+          animation-direction: alternate
+          transition: all 0s ease-out
+          -webkit-animation-name: bounce
+          -webkit-animation-timing-function: ease-in
+          -webkit-animation-iteration-count: 1
+          -webkit-animation-duration: .4s
+          -webkit-animation-direction: alternate
+          -webkit-transition: all 0s ease-out
+          margin-top: -95px
           display: block
           &:hover
             display: block
@@ -99,12 +115,45 @@ h1,h2,h3,h4,p,li,a
       text-align: center
       width: 25%
       display: inline-block
-      margin-top: 110px
+      position: absolute
+      top: 75%
+      transform: translateY(-50%)
+      right: 0%
     .clear
       clear: both
 
-.navbar.about .navbar-item li 
-  a
-    color: white
-  .incoin-button
-    border-color: white
+.navbar.about
+  position: absolute
+  .navbar-item li 
+    a
+      color: white
+    .incoin-button
+      border-color: white
+
+@keyframes bounce
+  100%
+    margin-top: -95px
+  90%
+    margin-top: -48px
+  75%
+    margin-top: -95px
+  50%
+    margin-top: -16px
+  25%
+    margin-top: -95px
+  0%
+    margin-top: 0
+
+@-webkit-keyframes bounce
+  100%
+    margin-top: -95px
+  90%
+    margin-top: -80px
+  75%
+    margin-top: -90px
+  50%
+    margin-top: -70px
+  25%
+    margin-top: -85px
+  0%
+    margin-top: 0
