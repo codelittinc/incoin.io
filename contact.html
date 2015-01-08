@@ -22,9 +22,21 @@
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="assets/images/favicon/favicon-144.png">
     <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <!--[if IE]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="assets/js/libs/waypoints.min.js"></script>
+    <script src="assets/js/index.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-default about" role="navigation">
+    <nav class="navbar navbar-default contact" role="navigation">
       <div class="container-fluid clearfix">
 
         <ul class="navbar-item left">
@@ -55,112 +67,39 @@
     </nav>
 
     <!-- Small team section -->
-    <section id="top-banner" class="about">
+    <section id="top-banner" class="contact">
       <div class="title">
         <div class="header">
-          We are a small team
+          Want to get in touch?
         </div>
         <div class="subheader">
-          that loves what they do
+          Drop us a line!
         </div>
       </div>
     </section>
 
-    <!-- Description section -->
-    <section id="description">
-      <div class="description">
-        We're a dedicated team of professionals that came together to build awesome new things. We’re passionate about new and emerging technologies, and strive to push the boundaries with every product we throw ourselves in to.
-      </div>
+    <section id="envelope">
+      <img src="assets/images/SVG/Contact.svg">
     </section>
 
-    <!-- Picture section -->
-    <section id="picture-section">
-      <div class="picture-header">
-        Meet our team
-      </div>
-      <div id="pictures">
-        <div id="cody" class="picture">
-          <img src="assets/images/png/team/cody.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Cody Littlewood
-            </div>
-            <div class="subheader">
-              Managing Principal
-            </div>
-          </div>
+    <section id="contact-form">
+      <form action="MAILTO:tony@codelitt.com" method="post" enctype="text/plain">
+        <div class="name">
+          <img src="assets/images/SVG/contact-name.svg">
+          <input type="text" name="name" placeholder="Your name" class="text">
         </div>
-        <div id="tony" class="picture">
-          <img src="assets/images/png/team/tony.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Tony Holdstock-Brown
-            </div>
-            <div class="subheader">
-              Technology Director
-            </div>
-          </div>
+        <div class="email">
+          <img src="assets/images/SVG/contact-email.svg">
+          <input type="text" name="mail" placeholder="Your email" class="text">
         </div>
-        <div id="locky" class="picture">
-          <img src="assets/images/png/team/locky.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Daniel Lockhart
-            </div>
-            <div class="subheader">
-              Developer
-            </div>
-          </div>
+        <div class="message">
+          <img src="assets/images/SVG/contact-message.svg">
+          <input type="text" name="comment" placeholder="Message" size="50" class="text">
         </div>
-        <div id="carlos" class="picture">
-          <img src="assets/images/png/team/carlos.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Carlos Feliciano
-            </div>
-            <div class="subheader">
-              Developer
-            </div>
-          </div>
+        <div class="send">
+          <button type="submit" class="try-it-button contact">Send</button>
         </div>
-        <div id="daniel" class="picture">
-          <img src="assets/images/png/team/daniel.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Daniel Cornejo
-            </div>
-            <div class="subheader">
-              Graphic Designer
-            </div>
-          </div>
-        </div>
-        <div id="vicky" class="picture">
-          <img src="assets/images/png/team/vicky.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Vicky Jaime
-            </div>
-            <div class="subheader">
-              Creative Director
-            </div>
-          </div>
-        </div>
-        <div id="vincent" class="picture">
-          <img src="assets/images/png/team/vincent.jpg">
-          <div class="hover-over">
-            <div class="header">
-              Vincent Hendrickx
-            </div>
-            <div class="subheader">
-              Business Director
-            </div>
-          </div>
-        </div>
-        <div class="link" class="picture">
-          <a href="/contact.html" class="picture-button">Get In Touch</a>
-        </div>
-        <div class="clear"></div>
-      </div>
+      </form>
     </section>
 
     <!-- Links section -->
@@ -238,19 +177,6 @@
     ga('send', 'pageview');
 
   </script>
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://code.jquery.com/ui/1.11.1/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-  <!--[if IE]>
-  <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <script src="assets/js/libs/waypoints.min.js"></script>
-  <script src="assets/js/pictures.js"></script>
 
   </body>
 </html>

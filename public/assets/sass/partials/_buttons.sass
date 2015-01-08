@@ -17,29 +17,25 @@
   border: 1px solid #fff
   border-radius: 100px
   color: #fff
-  font-size: 16px
-  padding: 5px 30px
+  padding: 8px 30px
 
   &:hover
     background: #fff
     text-decoration: none
     border-color: transparent
 
-.try-it-button.about
-  +single-transition(all, 0.5s)
-  text-transform: uppercase
-  background: transparent
-  border: 1px solid #00bfed
-  border-radius: 100px
-  color: #00bfed
-  font-size: 16px
-  padding: 5px 30px
-
-  &:hover
-    background: #00bfed
-    color: #fff
-    text-decoration: none
-    border-color: transparent
+  &.about
+    border: 1px solid #00bfed
+    color: #00bfed
+    &:hover
+      background: #00bfed
+      color: #fff
+  &.contact
+    border: 1px solid #4C6EE7
+    color: #4C6EE7
+    &:hover
+      background: #4C6EE7
+      color: #fff
 
 .picture-button
   +single-transition(all, 0.5s)
@@ -48,8 +44,7 @@
   border: 1px solid #FB6653
   border-radius: 100px
   color: #FB6653
-  font-size: 16px
-  padding: 5px 30px
+  padding: 8px 30px
 
   &:hover
     background: #FB6653
