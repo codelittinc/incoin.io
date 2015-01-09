@@ -1,0 +1,112 @@
+.navbar
+  background-color: transparent
+  border: none
+  position: fixed
+  top: 3em
+  margin: 0
+  padding: 0
+  width: 100%
+  z-index: 999
+  +single-transition(all, 0.5s)
+  .container-fluid
+    width: 90%
+
+  .incoin-logo
+    display: block
+    background: image-url('/assets/images/PNG/Logo-Header-main.png')
+    background: image-url('/assets/images/SVG/Logo-Header-main.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    width: 100px
+    height: 100px
+    transition: none !important
+
+  .navbar-item
+    padding: 0
+    .logo-container
+      top: 0
+      margin-right: 4.5em
+      a:hover
+        border: none
+
+    li
+      list-style-type: none
+      display: inline-block
+      margin: 0 1em
+      text-transform: uppercase
+      font-size: 15px
+      position: relative
+      top: -3em
+      font-weight: lighter
+      a
+        color: #8bc0fb
+        +single-transition(all, 0.25s)
+        &.selected, &:hover
+          color: #fff
+          text-decoration: none
+          padding-bottom: 5px
+          border-bottom: 2px solid #fff
+    &.left
+      float: left
+    &.right
+      float: right
+      li
+        font-weight: bold
+        top: 2.5em
+      .incoin-button
+
+        &:hover
+          border-bottom: 3px solid #fff
+          background: #fff
+          color: #234cdd
+
+    &.white
+      li a
+        color: #fff
+      .incoin-button
+        border: 1px solid #fff
+        border-bottom: 1px solid #fff
+      .incoin-button:hover
+        border-bottom: 3px solid #fff
+        &.yellow
+          color: #FFCC46
+        &.blue
+          color: #0090e7
+
+  &.scrolled
+    background-color: #fff
+    border-radius: 0
+    top: 0
+    +box-shadow(0px 1px 7px #D0D0D0)
+    .incoin-logo
+      background: image-url('/assets/images/PNG/Logo-Sticky-Menu.png') no-repeat center
+      background-size: contain
+      width: 60px
+      height: 60px
+      margin: .5em 0 -0.5em
+    .navbar-item
+      .logo-container
+        top: 0
+        a:hover
+          border: none
+      li
+        color: #7f8a8f
+        top: -1em
+        a
+          color: #7f8a8f
+          &.selected, &:hover
+            border-bottom: 2px solid #7f8a8f
+
+      &.right
+        li
+          top: 2em
+        a
+          color: #8bc0fb
+          &:hover
+            border-color: #8bc0fb
+        .incoin-button
+          border-color: #8bc0fb
+          &:hover
+            background: #8bc0fb
+            color: #fff

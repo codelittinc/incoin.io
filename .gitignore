@@ -1,0 +1,4 @@
+public/assets/css
+public/assets/js
+.sass-cache
+node_modules
