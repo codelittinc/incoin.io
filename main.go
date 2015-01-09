@@ -123,9 +123,11 @@ func send_email(w http.ResponseWriter, r *http.Request) {
 
 func parseTemplate() {
   var err error
-  tpl, err = template.New("email").Parse(`<p>name={{.Name}}</p><br>
-<p>email={{.Email}}</p><br>
-<p>comment={{.Comment}}</p>`)
+  tpl, err = template.New("email").Parse(`<p>{{.Comment}}</p>
+<p>From,</p>
+<p>{{.Name}}</p>
+<p>{{.Email}}</p>
+`)
 
   if err != nil {
     panic(err.Error())
