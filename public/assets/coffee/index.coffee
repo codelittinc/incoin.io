@@ -74,6 +74,11 @@ $(document).ready ->
       $('.navbar').toggleClass('scrolled')
     offset: '25%'
 
+  $('#envelope').waypoint
+    handler: ->
+      $('.navbar').toggleClass('scrolled')
+    offset: '25%'
+
 # Since borders don't allow width in percentage we have to calculate it
 resizeBorder = ->
   $('.angled-border.bottom').css('border-left-width', "#{$(window).width()}px")
